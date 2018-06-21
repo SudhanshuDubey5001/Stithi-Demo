@@ -1,0 +1,59 @@
+{
+  "project_info": {
+    "project_number": "902156222663",
+    "firebase_url": "https://stithi-d7036.firebaseio.com",
+    "project_id": "stithi-d7036",
+    "storage_bucket": "stithi-d7036.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:902156222663:android:519a2444a0732959",
+        "android_client_info": {
+          "package_name": "stithi.my.com.stithi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "902156222663-esujdth0ubhg99o45ivsrff52c64ld0r.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "stithi.my.com.stithi",
+            "certificate_hash": "8d8ef53743d386b79626165c21532b9dafef960f"
+          }
+        },
+        {
+          "client_id": "902156222663-ee3rfv1sb3j3llhbrua6vrhmoaabh9si.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "902156222663-ee3rfv1sb3j3llhbrua6vrhmoaabh9si.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC8cZNi6hwc0NZ86DI9WV6ayxX86OSVKCM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "902156222663-ee3rfv1sb3j3llhbrua6vrhmoaabh9si.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

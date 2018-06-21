@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <group android:checkableBehavior="none">
+        <item
+            android:id="@+id/viewprofiles"
+            android:icon="@drawable/ic_group_black_24dp"
+            android:title="View Profiles" />
+
+        <item
+            android:id="@+id/wallet"
+            android:icon="@drawable/walleticon"
+            android:title="Wallet" />
+
+        <item
+            android:id="@+id/logout"
+            android:icon="@drawable/logouticon"
+            android:title="Logout" />
+    </group>
+</menu>

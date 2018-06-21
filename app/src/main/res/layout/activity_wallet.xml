@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical"
+    android:padding="15sp"
+    tools:context=".activities.WalletActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Transfer Credit"
+        android:id="@+id/topText"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10sp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="15sp"/>
+
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editCard"
+        android:layout_gravity="center"
+        android:layout_below="@+id/topText"
+        android:padding="10sp"
+        android:layout_margin="10sp"
+        card_view:cardCornerRadius="8dp"
+        card_view:cardElevation="4dp">
+
+        <EditText
+            android:id="@+id/wallet_amount_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="How much?"
+            android:inputType="number"/>
+
+    </android.support.v7.widget.CardView>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="To"
+        android:layout_below="@+id/editCard"
+        android:id="@+id/to"
+        android:layout_marginLeft="10sp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="15sp"/>
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="5"
+        android:layout_below="@+id/to"
+        android:layout_margin="10sp"
+        card_view:cardCornerRadius="8dp"
+        card_view:cardElevation="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/wallet_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="190sp"/>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_weight="3"
+        android:layout_margin="10sp"
+        card_view:cardCornerRadius="8dp"
+        card_view:cardElevation="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20sp"
+                android:gravity="center"
+                android:text="Available Credit"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="25sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2sp"
+                android:layout_marginTop="8sp"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/wallet_display"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:padding="10sp"
+                android:text="80"
+                android:textSize="85sp"/>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>
